@@ -1,0 +1,9 @@
+Gemini came up with the following proposed research plan:
+(1) Research modern Cobalt Strike Beacon tradecraft focusing on 2025-2026 developments, specifically malleable C2 profile evolution, fileless execution methods like reflective DLL injection, and use of SMB or named pipes for lateral communication.
+(2) Investigate EDR-specific detection opportunities including process injection patterns, suspicious LOLBin chains, memory-based artifacts associated with beacon sleep masking, and anomalous parent-child process relationships reported by major security vendors.
+(3) Explore network and web proxy detection strategies by analyzing recent intelligence on beaconing jitter patterns, TLS fingerprinting (JA3/JA4), DNS tunneling, and the abuse of legitimate cloud services or CDNs for C2 traffic hiding.
+(4) Identify real-world adversary behaviors from recent APT and ransomware incident reports (2025-present) to understand how Cobalt Strike is currently being deployed in the field vs theoretical lab setups.
+(5) Locate actionable detection engineering artifacts including Sigma rules, YARA signatures, and SIEM queries (KQL, Splunk, Elastic) from reputable open-source repositories and researcher blogs.
+(6) Analyze modern evasion techniques used to bypass EDR and proxy controls, such as protocol blending and domain fronting, and identify specific defensive countermeasures or telemetry gaps.
+(7) Investigate the impact of the 2024 law enforcement disruptions on attacker tradecraft and the subsequent shift toward alternative frameworks like Sliver or Havoc, noting similarities in detection logic.
+(8) Synthesize all findings into a technical report featuring an executive summary, tradecraft overview, deep dives into EDR and network detections, correlation strategies, and a playbook of specific rules and queries.
